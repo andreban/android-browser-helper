@@ -17,42 +17,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/user_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< Updated upstream
-        android:text="Hello World!" />
-=======
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-        <TextView
-            android:id="@+id/user_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/logged_out" />
-        <Button
-            android:id="@+id/login_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/login"
-            android:onClick="login">
-        </Button>
-        <ProgressBar
-            android:id="@+id/progress_bar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:indeterminate="true"
-            android:layout_gravity="center"
-            android:visibility="invisible">
-        </ProgressBar>
-    </LinearLayout>
->>>>>>> Stashed changes
-
+        android:layout_gravity="center"
+        android:text="@string/logged_out" />
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/login"
+        android:onClick="login">
+    </Button>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_gravity="center"
+        android:visibility="invisible">
+    </ProgressBar>
 </LinearLayout>
